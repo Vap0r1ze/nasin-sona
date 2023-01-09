@@ -1,7 +1,7 @@
 [Greasemonkey]: https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/
 [Tampermonkey]: https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo
-[Latest Userscript]: https://github.com/Vap0r1ze/nasin-pona/releases/download/latest/NasinPona.user.js
-[Releases Page]: https://github.com/Vap0r1ze/nasin-pona/releases
+[Latest Userscript]: https://github.com/Vap0r1ze/nasin-sona/releases/latest/download/NasinSona.user.js
+[Releases Page]: https://github.com/Vap0r1ze/nasin-sona/releases
 
 # Nasin Sona
 

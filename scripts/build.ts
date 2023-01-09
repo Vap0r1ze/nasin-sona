@@ -17,7 +17,7 @@ if (GITHUB_JOB === "do_release") {
   meta["version"] = GITHUB_REF_NAME.slice(1)
   meta[
     "updateURL"
-  ] = `https://github.com/${GITHUB_REPOSITORY}/releases/download/latest/${basename(
+  ] = `https://github.com/${GITHUB_REPOSITORY}/releases/latest/download/${basename(
     commonOptions.outfile!
   )}`
 }
