@@ -1,4 +1,4 @@
-import { isWord, words } from "data"
+import { wordLookup } from "data"
 import { clearWord, container, setWord, stylesheet } from "display"
 import { getWordAtPoint } from "dom"
 
@@ -6,16 +6,18 @@ let prevWord: string | null = null
 
 window.addEventListener("dblclick", (evt) => {
   if (!(evt.target instanceof Node)) return
-  const word = getWordAtPoint(evt.target, evt.x, evt.y)
+  const wordText = getWordAtPoint(evt.target, evt.x, evt.y)
 
-  if (!word || word === prevWord) return
-  if (!isWord(word)) return
+  if (!wordText || wordText === prevWord) return
+
+  const word = wordLookup.get(wordText)
+  if (!word) return
 
   document.getSelection()?.removeAllRanges()
-  if (word) setWord(words[word])
+  if (wordText) setWord(word)
   else clearWord()
 
-  prevWord = word
+  prevWord = wordText
 })
 
 window.addEventListener("click", (evt) => {

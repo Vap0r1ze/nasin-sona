@@ -1,14 +1,14 @@
 import words from "~words"
-export { words }
 
 export const wordLookup = new Map(
   Object.entries(words).map(([key, value]) => [key.toLowerCase(), value])
 )
 
-export function isWord(word: string) {
-  return wordLookup.has(word.toLowerCase())
+for (const word of Object.values(words)) {
+  if (word.ucsur)
+    wordLookup.set(
+      // "U+F196C" -> 0xF196C -> "\uDB86\uDD6C"
+      String.fromCodePoint(parseInt(word.ucsur.slice(2), 16)),
+      word
+    )
 }
-
-// for (const [word, data] of wordLookup.entries()) {
-//   data.ucsur
-// }

@@ -12,6 +12,12 @@ export function rectContains(rect: Range | Element, x: number, y: number) {
 }
 
 export function getWord(text: string, index: number): string | null {
+  // UCSUR
+  const codePoint = text.codePointAt(index) || 0
+  if (codePoint >= 0xf1900 && codePoint <= 0xf19ff)
+    return String.fromCodePoint(codePoint)
+
+  // Alpha word
   const preIndex = text.slice(0, index).match(/[a-z]*$/i)![0]
   const postIndex = text.slice(index).match(/^[a-z]*/i)![0]
   return preIndex + postIndex || null
