@@ -2,12 +2,7 @@ import assert from "assert"
 import { build, BuildResult } from "esbuild"
 import { writeFileSync } from "fs"
 import { pathToFileURL } from "url"
-import {
-  commonOptions,
-  getHeaderMeta,
-  scriptMeta,
-  writeOutput,
-} from "./buildCommon"
+import { commonOptions, getHeaderMeta, scriptMeta, writeOutput } from "./common"
 
 function onBuild(result: BuildResult) {
   assert(result.outputFiles, "no output files")

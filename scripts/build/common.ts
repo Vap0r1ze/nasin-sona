@@ -1,6 +1,7 @@
 import { BuildOptions, OutputFile } from "esbuild"
 import { mkdirSync, readFileSync, writeFileSync } from "fs"
 import { dirname } from "path"
+import { wordsPlugin } from "./plugins/words"
 
 type ScriptMeta = Record<string, string | string[]>
 
@@ -21,6 +22,7 @@ export const commonOptions: BuildOptions & { write: false } = {
   loader: {
     ".css": "text",
   },
+  plugins: [wordsPlugin],
 }
 
 // Userscript Header

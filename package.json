@@ -10,9 +10,8 @@
     "match": "*://*/*"
   },
   "scripts": {
-    "prepare": "tsx scripts/fetchDataset.ts",
-    "build": "tsx scripts/build.ts",
-    "dev": "tsx scripts/buildDev.ts"
+    "build": "tsx scripts/build/build.ts",
+    "dev": "tsx scripts/build/dev.ts"
   },
   "devDependencies": {
     "@types/node": "^18.11.18",

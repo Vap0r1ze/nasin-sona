@@ -1,4 +1,4 @@
-import type { Word } from "data"
+import type { Word } from "types"
 import css from "./style.css"
 
 let wordDisplay: HTMLElement | null = null
@@ -43,7 +43,7 @@ function WordDisplay(word: Word) {
             .filter(Boolean)
             .join(" · ")}
         </div>
-        <div class="desc">{word.def.en}</div>
+        <div class="desc">{word.def}</div>
       </div>
       {word.sitelen_pona && (
         <div class="image">
