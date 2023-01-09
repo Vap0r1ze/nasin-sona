@@ -4,7 +4,9 @@
 [Releases Page]: https://github.com/Vap0r1ze/nasin-sona/releases
 
 # Nasin Sona
-
+<p align="center">
+  <image alt="Nasin Sona Definitions" src="https://user-images.githubusercontent.com/20448879/211380304-24d6265f-e22e-4e49-8b5b-88267e2385fc.png" />
+</p>
 toki! mi wile sona pona e toki pona la mi pali e ilo ni!
 
 o sona pona kepeken ilo ni <3
@@ -21,4 +23,6 @@ You can also always find the latest version of the userscript in the [Releases p
 
 Double click an any toki pona word to open the word hint. Click anywhere that isnt a word to close it.
 
-<video alt="video showing off how to use the userscript" src="https://user-images.githubusercontent.com/20448879/211373089-9d27514e-7a1b-4003-bc95-83f526194135.mp4" />
+<p align="center">
+  <video alt="Showcasing Nasin Sona" src="https://user-images.githubusercontent.com/20448879/211373089-9d27514e-7a1b-4003-bc95-83f526194135.mp4" />
+</p>
