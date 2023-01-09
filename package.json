@@ -1,12 +1,12 @@
 {
-  "name": "nimi-li-userscript",
+  "name": "nasin-sona",
   "private": true,
   "license": "MIT",
   "userscript": {
-    "name": "ilo-pi-nimi-li",
+    "name": "NasinSona",
     "namespace": "https://github.com/Vap0r1ze/",
     "author": "Vap0r1ze",
-    "description": "ilo pi nimi li: luka tu la pu anu ku e lukin",
+    "description": "nasin sona: o alasa e nimi",
     "match": "*://*/*"
   },
   "scripts": {
