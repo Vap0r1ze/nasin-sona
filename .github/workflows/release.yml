@@ -1,0 +1,30 @@
+on:
+  push:
+    tags: ['v[0-9]+.[0-9]+.[0-9]+']
+
+jobs:
+  do_release:
+    name: Do release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'pnpm'
+
+      - name: Install dependencies and prepare
+        run: pnpm i --frozen-lockfile
+
+      - name: Build userscript
+        run: pnpm build
+
+      - name: Create release
+        uses: ncipollo/release-action@v1
+        with:
+          name: Nasin Pona ${{ github.ref_name }}
+          artifacts: "dist/*.user.js"
+          makeLatest: true
