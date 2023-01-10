@@ -3,7 +3,7 @@ import { mkdirSync, readFileSync, writeFileSync } from "fs"
 import { dirname } from "path"
 import { wordsPlugin } from "./plugins/words"
 
-type ScriptMeta = Record<string, string | string[]>
+export type ScriptMeta = Record<string, string | string[]>
 
 const { userscript: scriptMeta }: { userscript: ScriptMeta } = JSON.parse(
   readFileSync("package.json", "utf-8")
