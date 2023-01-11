@@ -23,7 +23,7 @@ You will need either [Tampermonkey] (for Chrome/Chromium users) or the [Greasemo
 These are extensions that allow you to install userscripts.
 
 After installed, you can open the [latest userscript] and you should see an install page.
-You can also always find the latest version of the userscript in the [Releases page], the userscript should automatically update though.
+You can also always find the latest version of the userscript in the [Releases page], ~~the userscript should automatically update though~~. The userscript doesn't update at the moment, I need to find out how to make that work.
 
 ## Usage
 
