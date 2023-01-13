@@ -20,7 +20,7 @@ export function getWord(text: string, index: number): string | null {
   // Alpha word
   const preIndex = text.slice(0, index).match(/[a-z]*$/i)![0]
   const postIndex = text.slice(index).match(/^[a-z]*/i)![0]
-  return preIndex + postIndex || null
+  return (preIndex + postIndex)?.toLowerCase() || null
 }
 
 /** https://stackoverflow.com/a/3710561/6719456 */
