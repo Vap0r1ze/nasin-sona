@@ -19,6 +19,9 @@ export function clearWord() {
 }
 
 function WordDisplay(word: Word) {
+  const image = <div class="image" />
+  GM_addElement(image, "img", { src: `https://sitelen.nimi.li/img/64/${word.word}.png` })
+
   return (
     <div class="word">
       <div class="info">
@@ -45,11 +48,7 @@ function WordDisplay(word: Word) {
         </div>
         <div class="desc">{word.def}</div>
       </div>
-      {word.sitelen_pona && (
-        <div class="image">
-          <img src={`https://sitelen.nimi.li/img/64/${word.word}.png`}> </img>
-        </div>
-      )}
+      {word.sitelen_pona && image}
     </div>
   )
 }

@@ -1,9 +1,5 @@
-declare module "*.css" {
-  const source: string
-  export default source
+declare global {
+  export function GM_addElement(parent: HTMLElement, tag: string, attributes: Record<string, string>): void
 }
 
-declare module "~words" {
-  const words: Record<string, import("./types").Word>
-  export default words
-}
+export {}

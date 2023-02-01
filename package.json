@@ -7,7 +7,8 @@
     "namespace": "https://github.com/Vap0r1ze/",
     "author": "Vap0r1ze",
     "description": "nasin sona: o alasa e nimi",
-    "match": "*://*/*"
+    "match": "*://*/*",
+    "grant": [ "GM_addElement" ]
   },
   "scripts": {
     "build": "tsx scripts/build/build.ts",
